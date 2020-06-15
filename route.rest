@@ -1,0 +1,37 @@
+### acessando via GET
+GET http://localhost:3000/projects/test
+###
+POST http://localhost:3000/projects/add
+Content-Type: application/json
+
+{    
+    "title": "IoT Evolution",
+    "description": "New project with node.JS and Arduino",
+    "company": "JRSF",
+    "salary": "20",
+    "comission": "10",
+    "email": "robert@gmail.com",
+    "new_project": 1
+}
+
+###
+PUT http://localhost:3000/projects/test/5e6e0b0ca1f5141b90d55cc9
+Content-Type: application/json
+
+{
+  "name": "Claudia",
+  "email": "claudia@marvel.com",
+  "password": "123456",
+  "gender": "Female"
+}
+###
+DELETE http://localhost:3000/projects/test/5e6e2357a1f5141b90d55cd1
+###
+PATCH  http://localhost:3000/projects/test/5e6e0b0ca1f5141b90d55cc9
+Content-Type: application/json
+
+{
+  "name": "Jessica",
+  "password": "123456",
+}
+###
